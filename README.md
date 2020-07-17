@@ -1,2 +1,2 @@
 # web
-My first web-page design 
+My first website design with HTML & CSS
