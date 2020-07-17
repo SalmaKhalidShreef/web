@@ -1,12 +1,11 @@
 body{
   margin: .5%;
   font-size: 120%;
-  height: 100%;
+  min-height: 100%;
   padding: 0.5%;
 }
-header{
+header {
   background-color: #dcecf7;
-  background-image: url("flywheel.jpg");
   margin: 0 auto;
   padding: 1%;
   color: #ffffff !important;
@@ -14,16 +13,30 @@ header{
   background-repeat:no-repeat;
   font-size: 150%;
 }
+header{
+  background-image: url("flywheel.jpg");
+}
+footer{
+  background-color: #5e96a8;
+  color: #ffffff;
+  text-align: center;
+   clear: both;
+  position: relative;
+  height: 5%;
+}
 h1,h2{
   color:#3c6785;
   font-size: 150%;
   text-transform:capitalize;
+  text-shadow: 2px 2px #d3e6e8;
 }
 h1{
   text-align: center;
+
 }
 header h1{
   color: #ffffff;
+  text-shadow: 2px 2px #1e585e;
 }
 
 nav a{
@@ -61,25 +74,27 @@ nav a:active {
   position: relative;
   display: inline-block;
   float: left;
+
   background-color: #5e96a8;
   width: 20%;
-  height:80%;
-  margin:1%;
+  height:100vh;
+  margin:.2%;
 
   padding: 1%;
 }
 img {
   display: block;
   height: 30%;
+  width: 50%;
   object-fit: cover;
   margin-left: auto;
   margin-right: auto;
   margin-top: 7px;
   margin-bottom: 7px;
-  width: 50%;
+  width: 60%;
  border: 2px solid black;
  transition-property: width;
- transition-duration: 2s;
+ transition-duration: 1s;
 
 }
 img:hover{
@@ -93,6 +108,78 @@ img:hover{
   margin: 1%;
   background-color: white;
 }
+
 nav{
   text-align: center;
+}
+table{
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 100%;
+  font-weight: normal;
+  line-height: 1.2;
+  width:80%;
+  margin: auto;
+  border-spacing: 4;
+  border: 2px solid #3c6785;
+  -webkit-border-radius:  25px 25px 0 0;
+  -moz-border-radius:  25px 25px 0 0;
+  -o-border-radius:  25px 25px 0 0;
+  border-bottom: 4px  solid #3c6785;
+  padding: .02%;
+}
+tr:nth-child(odd) {
+	background: #e4f5f7;
+}
+tr:nth-child(even) {
+	background:#d3eef2;
+}
+tr{
+  opacity: .8;
+  text-align: center;
+
+
+}
+td{
+  /*did the color by row not coloumn to get different colors*/
+  padding: 1%;
+  color: #3c6785;
+  border-radius: 2px;
+  text-shadow: 2px 2px #d3e6e8;
+}
+tr >td:first-child{
+  text-align: left;
+}
+tr:hover{
+  opacity: 1;
+}
+tr:first-child{
+  padding: .7%;
+  text-align: left;
+  background: #93bfcf;
+  background: -moz-linear-gradient(left, #93bfcf 0%, #76a7b3 50%, #5393a6 100%);
+  background: -webkit-linear-gradient(left, #93bfcf 0%, #76a7b3 50%, #5393a6 100%);
+  background: -o-linear-gradient(left, #93bfcf 0%, #76a7b3 50%, #5393a6 100%);
+  background: -ms-linear-gradient(left, #93bfcf 0%, #76a7b3 50%, #5393a6 100%);
+  background: linear-gradient(to right, #93bfcf 0%, #76a7b3 50%, #5393a6 100%);
+  color: #ffffff;
+  text-transform: uppercase;
+
+}
+tr:first-child>th:first-child {
+  text-align: left;
+  padding: .7%;
+  -webkit-border-radius: 25px 0 0 0;
+  -moz-border-radius: 25px 0 0 0;
+  -o-border-radius: 25px 0 0 0;
+  border-radius: 25px 0 0 0;
+
+}
+tr:first-child>th:last-child {
+  text-align: left;
+  padding: .7%;
+  -webkit-border-radius: 0 25px 0 0;
+  -moz-border-radius: 0 25px 0 0;
+  -o-border-radius: 0 25px 0 0;
+  border-radius: 0 25px 0 0;
+
 }
