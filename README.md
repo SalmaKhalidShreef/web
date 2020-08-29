@@ -1,2 +1,3 @@
 # web
-My first website design with HTML5 & CSS3
+My first website design 
+using only HTML5 & CSS3
